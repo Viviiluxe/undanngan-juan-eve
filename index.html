@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Pernikahan</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Undangan Pernikahan Juan & Eve</h1>
+      <p>
+        Dengan penuh cinta, kami mengundang Anda untuk menjadi bagian dari hari
+        bahagia kami.
+      </p>
+    </header>
+
+    <section>
+      <div class="cover-video">
+        <video controls autoplay muted loop>
+          <source src="PREWED JUAN N EVE.mp4" type="video/mp4" />
+          Browser Anda tidak mendukung tag video.
+        </video>
+      </div>
+
+      <div class="countdown-section">
+        <div class="menu-grid">
+          <div class="photo-gallery">
+            <img src="foto 1.jpg" alt="Foto pasangan" />
+            <img src="foto 2.jpg" alt="Kenangan indah" />
+            <img src="foto 3.jpg" alt="Kebersamaan" />
+            <img src="foto 4.jpg" alt="Kebersamaan" />
+          </div>
+        </div>
+        <br />
+
+        <h3>Waktu Menuju Hari Bahagia</h3>
+        <div id="countdown">
+          <div>
+            <span id="days">0</span>
+            <p>Hari</p>
+          </div>
+          <div>
+            <span id="hours">0</span>
+            <p>Jam</p>
+          </div>
+          <div>
+            <span id="minutes">0</span>
+            <p>Menit</p>
+          </div>
+          <div>
+            <span id="seconds">0</span>
+            <p>Detik</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="jadwal-section" id="jadwal-section">
+        <h3>Jadwal Acara</h3>
+        <ul class="jadwal-list">
+          <li>
+            <strong>Akad Nikah</strong><br />
+            Sabtu, 30 Agustus 2025<br />
+            Pukul 08.00 - 10.00 WIB<br />
+            Gedung Adam Malik, Padangsidimpun
+          </li>
+          <li>
+            <strong>Resepsi</strong><br />
+            Sabtu, 30 Agustus 2025<br />
+            Pukul 11.00 - 14.00 WIB<br />
+            Gedung Adam Malik, Padangsidimpun
+          </li>
+        </ul>
+      </div>
+      <section class="rsvp-section">
+        <h3>Konfirmasi Kehadiran (RSVP)</h3>
+        <form id="rsvpForm">
+          <div class="form-group">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required />
+          </div>
+          <div class="form-group">
+            <label for="kehadiran">Apakah Anda akan hadir?</label>
+            <select id="kehadiran" name="kehadiran" required>
+              <option value="">-- Pilih --</option>
+              <option value="Hadir">Hadir</option>
+              <option value="Tidak Hadir">Tidak Hadir</option>
+            </select>
+          </div>
+          <button type="submit">Kirim</button>
+        </form>
+        <div id="rsvpResult" class="rsvp-result"></div>
+      </section>
+
+      <div class="lokasi-section" id="lokasi-section">
+        <h3>Lokasi Acara</h3>
+        <p>Gedung Adam Malik, Padangsidimpun</p>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.6634055029945!2d99.27230459999997!3d1.3786261999999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302c1c9cb9e48fdf%3A0x491105e857e605d9!2sGedung%20Adam%20Malik%20(G.nasional)!5e0!3m2!1sid!2sid!4v1750055652443!5m2!1sid!2sid"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+            width="100%" height="300" style="border: 0" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe
+          >
+          <div style="margin-top: 1rem">
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=Gedung+Adam+Malik+Padangsidimpuan"
+              target="_blank"
+              class="btn-maps"
+            >
+              📍 Buka di Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="interactive-section">
+        <h3>Tinggalkan Ucapan</h3>
+        <br />
+        <p>Klik tombol di bawah untuk mengirimkan pesan spesial kepada kami.</p>
+        <br />
+        <button onclick="kirimUcapan()">Kirim Ucapan</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <audio id="musikLatar" autoplay muted loop>
+      <source
+        src="Vancouver Sleep Clinic - Someone to Stay (Audio).mp3"
+        type="audio/mpeg"
+      />
+      Browser Anda tidak mendukung pemutar audio.
+    </audio>
+  </body>
+</html>

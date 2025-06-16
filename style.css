@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(#fff8f0, #fdebd0);
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #fff5ea;
+}
+
+header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  color: #c08457;
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cover-video {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.cover-video video {
+  width: 100%;
+  height: auto;
+}
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.photo-gallery img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.interactive-section {
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.interactive-section button {
+  padding: 0.75rem 1.5rem;
+  background-color: #c08457;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.jadwal-section {
+  background-color: #fffefc;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.jadwal-section h3 {
+  font-size: 1.8rem;
+  color: #c08457;
+  margin-bottom: 1rem;
+}
+
+.jadwal-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.jadwal-list li {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.lokasi-section {
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.lokasi-section h3 {
+  font-size: 1.8rem;
+  color: #c08457;
+  margin-bottom: 0.5rem;
+}
+
+.map-container {
+  margin-top: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-maps {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #c08457;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-maps:hover {
+  background-color: #a6683f;
+}
+
+.countdown-section {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.rsvp-section {
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.rsvp-section h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #c08457;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.rsvp-section button {
+  background-color: #c08457;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.rsvp-section button:hover {
+  background-color: #a6683f;
+}
+
+.rsvp-result {
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: green;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+#countdown div {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 70px;
+}
+
+#countdown span {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #c08457;
+}
